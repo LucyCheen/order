@@ -8,7 +8,7 @@ public class Order {
     public Order(int amount, Delivery delivery) {
         this.amount = amount;
         this.delivery = delivery;
-        this.shipFeed = shipFeed;
+        this.shipFeed = delivery.price;
     }
     public  int total(){
         return amount+shipFeed;
